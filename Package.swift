@@ -5,24 +5,24 @@ import PackageDescription
 
 let package = Package(
     name: "BindingHelper",
+    platforms: [
+        .iOS(.v15), .macOS(.v12), //.watchOS(.v8)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "BindingHelper",
             targets: ["BindingHelper"]),
     ],
+    /* To generate static documentation in a deleted docs directory enter in terminal:
+     cd ~/Documents/Apps/RemoteSwiftPackages/LockApp
+     swift package --allow-writing-to-directory ~/Documents/Apps/RemoteSwiftPackages/LockApp/docs generate-documentation --target LockApp --disable-indexing --transform-for-static-hosting --hosting-base-path LockApp --output-path ~/Documents/Apps/RemoteSwiftPackages/LockApp/docs
+     */
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "BindingHelper",
             dependencies: []),
-        .testTarget(
-            name: "BindingHelperTests",
-            dependencies: ["BindingHelper"]),
     ]
 )
