@@ -14,8 +14,8 @@ let package = Package(
             targets: ["BindingHelper"]),
     ],
     /* To generate static documentation in a deleted docs directory enter in terminal:
-     cd ~/Documents/Apps/RemoteSwiftPackages/LockApp
-     swift package --allow-writing-to-directory ~/Documents/Apps/RemoteSwiftPackages/LockApp/docs generate-documentation --target LockApp --disable-indexing --transform-for-static-hosting --hosting-base-path LockApp --output-path ~/Documents/Apps/RemoteSwiftPackages/LockApp/docs
+     cd ~/Documents/Apps/RemoteSwiftPackages/BindingHelper
+     swift package --allow-writing-to-directory ~/Documents/Apps/RemoteSwiftPackages/BindingHelper/docs generate-documentation --target BindingHelper --disable-indexing --transform-for-static-hosting --hosting-base-path BindingHelper --output-path ~/Documents/Apps/RemoteSwiftPackages/BindingHelper/docs
      */
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
