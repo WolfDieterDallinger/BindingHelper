@@ -11,7 +11,7 @@ This modul enables:
 
 > Note: As of July 2022 DocC does not handle extensions to external symbols so `!` and `??` are not properly included in this documentation, but you can access the documentation using quick help (right click on symbol > show quick help).
 
-### !
+### Operator !
 
 A `Binding` with the negated wrapped `Bool`.
 
@@ -26,7 +26,7 @@ struct MyView: View {
 }
 ```
 
-### ??
+### Operator ??
 
 A `Binding` with the nil-coalesced wrapped value.
 
