@@ -1,6 +1,6 @@
-# BindingHelper
+# ``BindingHelper``
 
-A Swift package with a Swift modul to add functionality tp `Binding`.
+A Swift package with a Swift modul to extend functionality of `Binding`.
 
 ## Overview
 
@@ -16,27 +16,35 @@ This modul enables:
 A `Binding` with the negated wrapped `Bool`.
 
 ```swift
+import BindingHelper
+import SwiftUI
+
 struct MyView: View {
     @State private var isOn = false
 
     var body: some View {
-        Toggle("isOn", $isOn)
-        Toggle("isOff", !$isOn)
+        Toggle("Is on", $isOn)
+        Toggle("Is off", !$isOn)
     }
 }
 ```
 
 ### Operator ??
 
-A `Binding` with the nil-coalesced wrapped value.
+A `Binding` with a nil-coalesced wrapped value.
 
-The nil-coalescing is bidirectional. If you assign the default value to the wrapped value the wrapped value of the original `Binding` becomes nil.
+The nil-coalescing is bidirectional. If you assign the default value to the wrapped value of this `Binding<Value>` the wrapped value of the original `Binding<Value?>` becomes nil.
 
-Use this operator e. g. for a `Binding` from an managed object property with an optional type like `String?` from `CoreData`.
+Use this operator e. g. with a `Binding<String?>` from a `NSManagedObject`‘s `Managed` property to get a `Binding<String>`.
 
 ```swift
+import BindingHelper
+import CoreData
+import SwiftUI
+
 struct MyView: View {
-    // Item is a managed object from CoreData with an property named text of type String?
+    // Item is a NSManagedObject with a 
+    // Managed property text of type String?
     @ObservedObject var item: Item
    
     var body: some View {
@@ -49,5 +57,5 @@ struct MyView: View {
 
 ### Operators
 
-- ``Binding+!``
+- ``BindingHelper/Binding/!``
 - ``Binding+??``

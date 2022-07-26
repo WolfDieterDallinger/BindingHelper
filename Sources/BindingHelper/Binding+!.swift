@@ -10,14 +10,17 @@ import SwiftUI
 extension Binding {
     /**
      A `Binding` with the negated wrapped `Bool`.
-     
+
      ```swift
+     import BindingHelper
+     import SwiftUI
+
      struct MyView: View {
          @State private var isOn = false
-        
+
          var body: some View {
-             Toggle("isOn", $isOn)
-             Toggle("isOff", !$isOn)
+             Toggle("Is on", $isOn)
+             Toggle("Is off", !$isOn)
          }
      }
      ```

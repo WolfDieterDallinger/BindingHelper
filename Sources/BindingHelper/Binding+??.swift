@@ -9,15 +9,20 @@ import SwiftUI
 
 extension Binding {
     /**
-     A `Binding` with the nil-coalesced wrapped value.
-    
-     The nil-coalescing is bidirectional. If you assign the default value to the wrapped value the wrapped value of the original `Binding` becomes nil.
-     
-     Use this operator e. g. for a `Binding` from an managed object property with an optional type like `String?` from `CoreData`.
-    
+     A `Binding` with a nil-coalesced wrapped value.
+
+     The nil-coalescing is bidirectional. If you assign the default value to the wrapped value of this `Binding<Value>` the wrapped value of the original `Binding<Value?>` becomes nil.
+
+     Use this operator e. g. with a `Binding<String?>` from a `NSManagedObject`‘s `Managed` property to get a `Binding<String>`.
+
      ```swift
+     import BindingHelper
+     import CoreData
+     import SwiftUI
+
      struct MyView: View {
-         // Item is a managed object from CoreData with an property named text of type String?
+         // Item is a NSManagedObject with a
+         // Managed property text of type String?
          @ObservedObject var item: Item
         
          var body: some View {
