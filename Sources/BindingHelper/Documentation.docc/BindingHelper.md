@@ -1,6 +1,6 @@
 # ``BindingHelper``
 
-A Swift package with a Swift modul to extend functionality of `Binding`.
+A Swift package with a Swift modul to extend the functionality of `Binding`.
 
 ## Overview
 
