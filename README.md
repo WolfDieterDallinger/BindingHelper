@@ -1,6 +1,6 @@
 # BindingHelper
 
-A Swift package with a Swift modul to add functionality tp `Binding`.
+A Swift package with a Swift modul to extend functionality of `Binding`.
 
 ![iOS 15 plus](https://img.shields.io/badge/iOS-15-success.svg) ![macOS 12 plus](https://img.shields.io/badge/macOS-12-success.svg) ![Swift Package Manager](https://img.shields.io/badge/SwiftPackageManager-OK-success.svg)
 
