@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "bindinghelper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/WolfDieterDallinger/BindingHelper",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6104b01822258dbea79a1b9df10cae06ae554000"
+      }
+    }
+  ],
+  "version" : 2
+}
