@@ -19,7 +19,7 @@ struct NilCoalescingOperatorView: View {
                 } else {
                     Text("text == nil")
                 }
-                TextField("Enter text", text: $text ?? "")
+                TextField("Enter text", text: $text.animation() ?? "")
             }
             .padding()
         }
