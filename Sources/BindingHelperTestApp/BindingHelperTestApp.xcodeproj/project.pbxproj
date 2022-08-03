@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7917BDEB289B13EA00619381 /* BindingHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 7917BDEA289B13EA00619381 /* BindingHelper */; };
 		7982F05B2890392C00F0EEA5 /* BindingHelperTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F05A2890392C00F0EEA5 /* BindingHelperTestAppApp.swift */; };
 		7982F05D2890392C00F0EEA5 /* NilCoalescingOperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F05C2890392C00F0EEA5 /* NilCoalescingOperatorView.swift */; };
 		7982F05F2890392E00F0EEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7982F05E2890392E00F0EEA5 /* Assets.xcassets */; };
 		7982F0622890392E00F0EEA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7982F0612890392E00F0EEA5 /* Preview Assets.xcassets */; };
-		7982F06C28903F2100F0EEA5 /* BindingHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 7982F06B28903F2100F0EEA5 /* BindingHelper */; };
 		7982F06E2890408000F0EEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F06D2890408000F0EEA5 /* ContentView.swift */; };
 		7982F0702890421F00F0EEA5 /* NotOperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982F06F2890421F00F0EEA5 /* NotOperatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7917BDE8289B13B700619381 /* BindingHelper */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BindingHelper; path = ../..; sourceTree = "<group>"; };
 		7982F0572890392C00F0EEA5 /* BindingHelperTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindingHelperTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7982F05A2890392C00F0EEA5 /* BindingHelperTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingHelperTestAppApp.swift; sourceTree = "<group>"; };
 		7982F05C2890392C00F0EEA5 /* NilCoalescingOperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilCoalescingOperatorView.swift; sourceTree = "<group>"; };
@@ -31,18 +32,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7982F06C28903F2100F0EEA5 /* BindingHelper in Frameworks */,
+				7917BDEB289B13EA00619381 /* BindingHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7917BDE7289B13B700619381 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7917BDE8289B13B700619381 /* BindingHelper */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		7917BDE9289B13EA00619381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7982F04E2890392C00F0EEA5 = {
 			isa = PBXGroup;
 			children = (
+				7917BDE7289B13B700619381 /* Packages */,
 				7982F0592890392C00F0EEA5 /* BindingHelperTestApp */,
 				7982F0582890392C00F0EEA5 /* Products */,
+				7917BDE9289B13EA00619381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +110,7 @@
 			);
 			name = BindingHelperTestApp;
 			packageProductDependencies = (
-				7982F06B28903F2100F0EEA5 /* BindingHelper */,
+				7917BDEA289B13EA00619381 /* BindingHelper */,
 			);
 			productName = BindingHelperTestApp;
 			productReference = 7982F0572890392C00F0EEA5 /* BindingHelperTestApp.app */;
@@ -123,7 +141,6 @@
 			);
 			mainGroup = 7982F04E2890392C00F0EEA5;
 			packageReferences = (
-				7982F06A28903F2100F0EEA5 /* XCRemoteSwiftPackageReference "BindingHelper" */,
 			);
 			productRefGroup = 7982F0582890392C00F0EEA5 /* Products */;
 			projectDirPath = "";
@@ -356,21 +373,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		7982F06A28903F2100F0EEA5 /* XCRemoteSwiftPackageReference "BindingHelper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WolfDieterDallinger/BindingHelper";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		7982F06B28903F2100F0EEA5 /* BindingHelper */ = {
+		7917BDEA289B13EA00619381 /* BindingHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7982F06A28903F2100F0EEA5 /* XCRemoteSwiftPackageReference "BindingHelper" */;
 			productName = BindingHelper;
 		};
 /* End XCSwiftPackageProductDependency section */

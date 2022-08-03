@@ -13,9 +13,9 @@ struct NilCoalescingOperatorView: View {
     
     var textToShow: String {
         guard let text = text else {
-            return "text = nil"
+            return "text == nil"
         }
-        return "text = \"\(text)\""
+        return "text == \"\(text)\""
     }
     
     var body: some View {
