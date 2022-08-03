@@ -15,6 +15,9 @@ struct NotOperatorView: View {
         ScrollView {
             VStack {
                 Text("isOn == \(isOn ? "true" : "false")")
+                    .animation(nil)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .clipped()
                 Toggle("Is on", isOn: $isOn.animation())
                 Toggle("Is off", isOn: !$isOn.animation())
             }

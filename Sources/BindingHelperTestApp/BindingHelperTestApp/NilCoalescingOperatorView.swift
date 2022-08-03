@@ -11,14 +11,20 @@ import SwiftUI
 struct NilCoalescingOperatorView: View {
     @State private var text: String?
     
+    var textToShow: String {
+        guard let text = text else {
+            return "text = nil"
+        }
+        return "text = \"\(text)\""
+    }
+    
     var body: some View {
         ScrollView {
             VStack {
-                if let text = text {
-                    Text("text == \"\(text)\"")
-                } else {
-                    Text("text == nil")
-                }
+                Text(textToShow)
+                    .animation(nil)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .clipped()
                 TextField("Enter text", text: $text.animation() ?? "")
             }
             .padding()

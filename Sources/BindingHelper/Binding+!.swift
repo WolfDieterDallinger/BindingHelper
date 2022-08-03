@@ -25,7 +25,7 @@ extension Binding {
      }
      ```
      */
-    public static prefix func !(binding: Binding<Value>) -> Binding<Value> where Value == Bool {
+    public static prefix func !(binding: Binding<Bool>) -> Binding<Bool> {
         return Binding<Bool>(
             get: {
                 !binding.wrappedValue
