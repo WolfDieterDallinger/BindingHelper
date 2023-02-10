@@ -18,7 +18,7 @@ let package = Package(
      swift package --allow-writing-to-directory ~/Documents/Apps/RemoteSwiftPackages/BindingHelper/docs generate-documentation --target BindingHelper --disable-indexing --transform-for-static-hosting --hosting-base-path BindingHelper --output-path ~/Documents/Apps/RemoteSwiftPackages/BindingHelper/docs
      */
     dependencies: [
-        //.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.1.0"),
     ],
     targets: [
         .target(
